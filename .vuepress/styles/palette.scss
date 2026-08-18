@@ -1,0 +1,38 @@
+
+
+.custom-container {
+    img {
+     	margin-right:auto;
+     	margin-left:auto;
+  	}
+    
+}
+.custom-container .center {
+      text-align: center;
+}
+
+.center {
+	text-align: center;
+}
+
+.custom-container {
+    .right {
+    	text-align: right;
+    }
+}
+
+
+table {
+  width: 100%;
+  display: table;
+}
+
+:root {
+  --content-width: 90%;
+  --vp-c-border: #eaecef;
+}
+
+table {
+  width: 100%;
+  display: table;
+}
