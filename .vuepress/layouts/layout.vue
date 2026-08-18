@@ -13,24 +13,10 @@
   </ParentLayout>
 </template>
 <script setup>
-  import { ref, onMounted, onUnmounted,computed } from 'vue'
-  import { useClientData } from '@vuepress/client';
+  import { ref, onMounted, onUnmounted } from 'vue'
   import GithubButton from 'vue-github-button'
 
   import ParentLayout from '@vuepress/theme-default/layouts/Layout.vue'
-
- const {
-  pageData,
-  pageFrontmatter,
-  pageHead,
-  pageHeadTitle,
-  pageLang,
-  routeLocale,
-  siteData,
-  siteLocaleData,
-} = useClientData()
-
-
 
   const isDarkMode = ref(false)
   let observer
