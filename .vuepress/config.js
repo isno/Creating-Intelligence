@@ -1,6 +1,4 @@
-import { viteBundler } from '@vuepress/bundler-vite';
-import { defaultTheme } from '@vuepress/theme-default';
-import { defineUserConfig } from 'vuepress';
+import { viteBundler, defaultTheme, defineUserConfig } from 'vuepress';
 import { containerPlugin } from '@vuepress/plugin-container'
 
 export default defineUserConfig({
