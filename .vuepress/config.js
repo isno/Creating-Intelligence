@@ -1,17 +1,28 @@
 import { viteBundler, defaultTheme, defineUserConfig } from 'vuepress';
 import { containerPlugin } from '@vuepress/plugin-container'
+import { mdEnhancePlugin } from 'vuepress-plugin-md-enhance'
+import { readingTimePlugin } from 'vuepress-plugin-reading-time2'
 
 export default defineUserConfig({
-	title: '创造智慧 - AI 系统的原理与实现',
+	title: '人工智能的第一性原理',
   bundler: viteBundler(),
-   plugins: [
-     containerPlugin({
-            type: 'center'
-        }),
-        containerPlugin({
-            type: 'right'
-        }),
-   ],
+  plugins: [
+    mdEnhancePlugin({
+      // 启用脚注
+      footnote: true,
+      katex: true,
+      sub: true,
+    }),
+    containerPlugin({
+        type: 'center'
+    }),
+    containerPlugin({
+        type: 'right'
+    }),
+    readingTimePlugin({
+    // your options
+    }),
+],
   theme: defaultTheme({
     
   	navbar: [{
@@ -36,14 +47,19 @@ export default defineUserConfig({
             }
             ],
              sidebar: [
-              '/Appendix-1.md',
             	'/intro.md',
-              '/chapter-01/computability.md',
-              '/chapter-01/Turing-machine.md',
-              '/chapter-01/Dartmouth-Conference.md',
-              '/chapter-01/M-P.md',
-              '/chapter-01/Perceptron.md',
-              '/chapter-03/Ex-Prodigy.md'
+                {
+                    text: '第一章 数理逻辑',
+                    children: [
+                        '/chapter-01/all-things-are-number.md',
+                        '/chapter-01/logic.md',
+                        '/chapter-01/axiomatic-system.md',
+                        '/chapter-01/the-dream-of-Leibniz.md',
+                        '/chapter-01/Boole.md',
+                        '/chapter-01/Begriffsschrift.md',
+                        '/chapter-01/conclusion.md',
+                    ]
+                }
             ]
   }),
 })
