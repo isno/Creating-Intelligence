@@ -30,7 +30,7 @@ export default defineUserConfig({
                 link: '/'
             },{
                 text: '作者',
-                link: '/author.md'
+                link: 'https://github.com/isno'
             },
             {
                 text: '《深入高可用系统原理与设计》',
@@ -49,14 +49,17 @@ export default defineUserConfig({
              sidebar: [
             	'/intro.md',
                 {
-                    text: '第一章 数理逻辑',
+                    text: '第一章：计算的进化',
+                    link: "/chapter-01/preface.md",
+                    collapsable: false,
+                    sidebarDepth: 1,
                     children: [
                         '/chapter-01/all-things-are-number.md',
                         '/chapter-01/logic.md',
                         '/chapter-01/axiomatic-system.md',
                         '/chapter-01/the-dream-of-Leibniz.md',
-                        '/chapter-01/Boole.md',
-                        '/chapter-01/Begriffsschrift.md',
+                        '/chapter-01/revival-of-mathematical-logic.md',
+                        '/chapter-01/axiomatic-crisis.md',
                         '/chapter-01/conclusion.md',
                     ]
                 }
