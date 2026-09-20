@@ -23,7 +23,7 @@ export default defineUserConfig({
       sub: true,
     }),
     readingTimePlugin(),
-    // 注册 CommentService，避免自定义 Layout 渲染未知组件打断页面切换
+    //注册 CommentService，避免自定义 Layout 渲染未知组件打断页面切换
     commentPlugin({
       provider: 'None',
     }),
