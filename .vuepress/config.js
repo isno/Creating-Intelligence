@@ -68,6 +68,15 @@ export default defineUserConfig({
           '/chapter-01/conclusion.html',
         ],
       },
+      {
+        text: '第二章：计算的边界',
+        link: '/chapter-02/preface.html',
+        collapsible: false,
+        children: [
+          '/chapter-02/computability.html',
+          '/chapter-02/complexity-theory.html',
+        ],
+      },
     ],
   }),
 })
