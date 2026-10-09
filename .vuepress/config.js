@@ -23,6 +23,19 @@ export default defineUserConfig({
       sub: true,
     }),
     readingTimePlugin(),
+    // 官方计数把连续的「汉字+字母」切成一段，夹在汉字中间的英文单词会被漏掉。
+    (app) => ({
+      name: 'word-count',
+      extendsPage: (page) => {
+        const readingTime = page.data.readingTime
+        if (!readingTime) return
+
+        const content = page.contentRendered ?? page.content ?? ''
+        const missed = content.match(/(?<=[\u4E00-\u9FFF])[A-Za-z]+(?:[-'][A-Za-z]+)*(?=[\u4E00-\u9FFF])/gu)
+
+        if (missed?.length) readingTime.words += missed.length
+      },
+    }),
     //注册 CommentService，避免自定义 Layout 渲染未知组件打断页面切换
     commentPlugin({
       provider: 'None',

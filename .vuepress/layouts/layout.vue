@@ -12,6 +12,12 @@
             </GithubButton>
           </ClientOnly>
         </div>
+         <div class="last-updated" >
+            <span class="prefix" v-if="pageWords > 0">约</span>
+            <span class="words" v-if="pageWords > 0">{{ formattedWords }}</span>
+            <span class="prefix" v-if="pageWords > 0">字</span>
+        </div>
+
       </div>
       <ClientOnly>
         <CommentService :darkmode="isDarkMode" class="layout-comment" />
@@ -21,9 +27,16 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { computed, ref, onMounted, onUnmounted } from 'vue'
 import GithubButton from 'vue-github-button'
 import ParentLayout from '@vuepress/theme-default/layouts/Layout.vue'
+import { useReadingTimeData } from '@vuepress/plugin-reading-time/client'
+
+const readingTime = useReadingTimeData()
+
+const pageWords = computed(() => readingTime.value?.words ?? 0)
+
+const formattedWords = computed(() => pageWords.value.toLocaleString('zh-CN'))
 
 const isDarkMode = ref(false)
 let observer
