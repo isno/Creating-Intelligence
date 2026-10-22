@@ -42,6 +42,9 @@ export default defineUserConfig({
     }),
   ],
   theme: defaultTheme({
+    // 关闭导航栏的深色/浅色切换按钮，固定使用浅色模式
+    colorMode: 'light',
+    colorModeSwitch: false,
     navbar: [
       {
         text: '首页',
@@ -74,7 +77,6 @@ export default defineUserConfig({
         children: [
           '/chapter-01/all-things-are-number.html',
           '/chapter-01/logic.html',
-          '/chapter-01/axiomatic-system.html',
           '/chapter-01/the-dream-of-Leibniz.html',
           '/chapter-01/revival-of-mathematical-logic.html',
           '/chapter-01/axiomatic-crisis.html',

@@ -6,26 +6,10 @@
 这是一本关于人工智能的开源书籍，讲述人工智能思想、发展历史与实现方法，笔者正在撰写。如果阅读文章发现问题，欢迎在 GitHub 提交 PR 或 Issue。
 
 
-## ⭐️ 为什么要写这个？
-
-这几年互联网基础设施技术出现了很大的更新迭代，比如容器技术（Container、Kubernetes）、服务网格（ServiceMesh）、无服务器（Serverless）、高性能网络（DPDK、XDP、RDMA）等等，我对这些技术有一些浅薄的见解和实践，但远没达到深刻理解的境界，我尝试使用 `费曼学习法` 把这些东西体系化地总结输出。一方面加深自我的学习认知，另一方面也希望这些输出对其他人有所帮助。
-
-整个系列的内容主要集中在 `网络`、`集群以及服务治理`、`FinOps` 这三个主题，这也代表着基础架构的几个核心：稳定、效率、成本。
-
-我会持续更新这个仓库的内容，如果想要关注可以点 `star` 。
-
-
-:::center
-
-[![Star History Chart](https://api.star-history.com/svg?repos=isno/thebytebook&type=Date)](https://star-history.com/#isno/thebytebook&Date)
-<p><a href="https://github.com/isno/theByteBook">https://github.com/isno/theByteBook</a></p>
-:::
-
-
 
 ## 如何阅读
 
-- **在线阅读**：本文档在线阅读地址为：[https://www.thebyte.com.cn](https://www.thebyte.com.cn)  【为防止缓存，阅读前请先强制刷新】
+- **在线阅读**：本文档在线阅读地址为：[https://ai.thebyte.com.cn](https://ai.thebyte.com.cn)  【为防止缓存，阅读前请先强制刷新】
 
 - **离线阅读**：
 
@@ -33,7 +17,7 @@
 
     ```bash
     # 克隆获取源码
-    $ git clone https://github.com/isno/theByteBook.git && cd theByteBook
+    $ git clone https://github.com/isno/Creating-Intelligence.git && cd Creating-Intelligence
 
     # 安装工程依赖
     $ npm install
