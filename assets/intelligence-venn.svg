@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="340" viewBox="0 0 760 340" role="img" aria-label="Intelligent behavior vs human behavior">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#555"/>
+    </marker>
+  </defs>
+  <rect width="760" height="340" fill="#ffffff"/>
+  <ellipse cx="290" cy="120" rx="200" ry="92" fill="#F5B041" fill-opacity="0.32" stroke="#D68910" stroke-width="3"/>
+  <ellipse cx="470" cy="120" rx="200" ry="92" fill="#4A90E2" fill-opacity="0.18" stroke="#4A90E2" stroke-width="3"/>
+  <g font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="22" font-weight="500" text-anchor="middle">
+    <text x="172" y="128" fill="#8C5E12">全部智能行为</text>
+    <text x="380" y="128" fill="#2F5D3A">智能行为</text>
+    <text x="590" y="128" fill="#24629F">全部人类行为</text>
+  </g>
+  <g fill="none" stroke="#555" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M210 190 L140 250"/>
+    <path d="M380 214 L380 250"/>
+    <path d="M550 190 L620 250"/>
+  </g>
+  <g font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="18" fill="#333" text-anchor="middle">
+    <text x="130" y="284">国际象棋中白棋</text>
+    <text x="130" y="310">是否必胜？</text>
+    <text x="380" y="284">今有雉、兔同笼，上有三十五头，</text>
+    <text x="380" y="310">下九十四足。问雉、兔各几何？</text>
+    <text x="630" y="284">豆腐脑应该吃甜的</text>
+    <text x="630" y="310">还是咸的？</text>
+  </g>
+</svg>

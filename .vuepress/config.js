@@ -77,9 +77,10 @@ export default defineUserConfig({
         children: [
           '/chapter-01/all-things-are-number.html',
           '/chapter-01/logic.html',
-          '/chapter-01/the-dream-of-Leibniz.html',
-          '/chapter-01/revival-of-mathematical-logic.html',
+          '/chapter-01/axiomatic-system.html',
+          '/chapter-01/reasoning-as-calculation.html',
           '/chapter-01/axiomatic-crisis.html',
+          '/chapter-01/hilbert-program.html',
           '/chapter-01/conclusion.html',
         ],
       },
@@ -91,6 +92,19 @@ export default defineUserConfig({
           '/chapter-02/computability.html',
           '/chapter-02/complexity-theory.html',
         ],
+      },
+      {
+        text: '第三章：机器可以思考吗？',
+        link: '/chapter-03/preface.html',
+        collapsible: false,
+        children: [
+          '/chapter-03/what-is-intelligence.html',
+        ],
+      },
+      {
+        text: '第七章：机器学习',
+        link: '/chapter-07/preface.html',
+        collapsible: false,
       },
     ],
   }),

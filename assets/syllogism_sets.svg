@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="440" viewBox="0 0 640 440" role="img" aria-label="集合包含关系 S 属于 M，M 属于 P">
+  <rect width="640" height="440" fill="#ffffff"/>
+  <circle cx="320" cy="222" r="192" fill="#4A90E2" fill-opacity="0.10" stroke="#4A90E2" stroke-width="3"/>
+  <circle cx="320" cy="239" r="122" fill="#50B88B" fill-opacity="0.18" stroke="#2E9B6F" stroke-width="3"/>
+  <circle cx="320" cy="270" r="49" fill="#F5B041" fill-opacity="0.32" stroke="#D68910" stroke-width="3"/>
+  <g font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="23" font-weight="500">
+    <text x="184" y="82" fill="#24629F">P：会死的事物</text>
+    <text x="320" y="167" text-anchor="middle" fill="#227C58">M：人</text>
+    <text x="320" y="277" text-anchor="middle" fill="#8C5E12">S</text>
+  </g>
+  <path d="M359 298 L430 332" fill="none" stroke="#777" stroke-width="1.8"/>
+  <text x="440" y="341" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="21" fill="#333">苏格拉底</text>
+</svg>
